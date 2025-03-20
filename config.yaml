@@ -1,4 +1,4 @@
-# 注意规则在满足自己需求情况下，尽量做到精简，不要过度复杂，以免影响性能。
+
 # 机场订阅
 proxy-providers:
   Airport1:
@@ -7,7 +7,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://a.idydz.top/api/v1/client/subscribe?token=973c2e687fe9e4495937abf91c4493c3
       interval: 300
     proxy: 直连
     header:
