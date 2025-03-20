@@ -6,7 +6,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://psub.coollhpp.workers.dev/sub?target=clash&url=https%3A%2F%2Fa.idydz.top%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D973c2e687fe9e4495937abf91c4493c3&insert=false
       interval: 300
     proxy: 直连
     header:
