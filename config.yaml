@@ -1,7 +1,7 @@
 # 机场订阅
 proxy-providers:
-  Airport1:
-    url: "机场订阅"
+  BoostNet:
+    url: "https://psub.coollhpp.workers.dev/sub?target=clash&url=https%3A%2F%2Fa.idydz.top%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D973c2e687fe9e4495937abf91c4493c3&insert=false"
     type: http
     interval: 86400
     health-check:
@@ -14,10 +14,30 @@ proxy-providers:
       - "Clash"
       - "mihomo"
       - "Clash.meta"
-
-# 节点信息
-proxies:
-  - {name: 直连, type: direct, udp: true}
+    override:
+      udp:true
+      down:"50 Mbps"
+      up:""10 Mbps""
+      skip-cert-verify:true
+  beibeiyun:
+    url: "https://psub.coollhpp.workers.dev/sub?target=clash&url=https%3A%2F%2Fbdsub.gg%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D4b9ea4b04a6e1d677b64aad3320f367f&insert=false"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+    header:
+      User-Agent:
+      - "Clash"
+      - "mihomo"
+      - "Clash.meta"
+    override:
+      udp:true
+      down:"50 Mbps"
+      up:""10 Mbps""
+      skip-cert-verify:true
 
 # 全局配置 
 port: 7890
